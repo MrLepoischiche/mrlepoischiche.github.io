@@ -1,0 +1,55 @@
+header {
+    /*position: fixed;*/
+    height: 100px;
+    width: 100vw;
+    border: var(--main-border);
+    background-color: var(--element-background);
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > div {
+    height: 100%;
+}
+
+#link-to-index {
+    width: 90px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-right: var(--main-border);
+}
+
+#link-to-index > h1 {
+    color: white;
+    text-align: center;
+    height: auto;
+    text-shadow: 6px 4px 2px black;
+}
+
+#link-navigator {
+    width: 40%;
+    align-items: center;
+    justify-content: space-around;
+    border-left: var(--main-border);
+    border-right: var(--main-border);
+}
+
+#link-navigator > * {
+    color: var(--main-text);
+    text-shadow: 4px 2px 1px black;
+}
+
+#color-changer {
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: var(--main-border);
+}
+
+#color-changer > img {
+    width: 40px;
+    height: 40px;
+    text-shadow: 4px 2px 1px black;
+}

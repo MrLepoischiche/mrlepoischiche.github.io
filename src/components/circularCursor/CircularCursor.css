@@ -1,0 +1,11 @@
+#circular-cursor {
+    pointer-events: none;
+    position: absolute;
+    x: calc(50vw - 25px);
+    y: calc(50vh - 25px);
+    background-color: transparent;
+    border: solid gray 1px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 500ms;
+}

@@ -1,0 +1,47 @@
+#spe-cards {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: stretch;
+    grid-auto-columns: 50%;
+    gap: 50px;
+}
+
+.spe-card {
+    width: 100%;
+    background-color: var(--element-background);
+    border: 2px solid #252525;
+    border-radius: 5%;
+    box-shadow: 10px 5px 5px #151515;
+    padding: 5%;
+
+    justify-content: center;
+    align-items: center;
+
+    transition: border-color 500ms;
+}
+.spe-card:hover {
+    border-color: #707070;
+}
+
+.spe-card > div {
+    width: 90%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+    #spe-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Maybe... */
+@media (min-width: 1600px) {
+    #spe-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

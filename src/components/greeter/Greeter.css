@@ -1,0 +1,44 @@
+#greeter {
+    gap: 100px;
+    align-items: center;
+    justify-content: start;
+    margin-top: 20px;
+}
+
+#greeter > div {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#greet-text {
+    height: 70vh;
+    width: 100vw;
+}
+
+#greet-text > h1 {
+    letter-spacing: 8px;
+    word-spacing: 33vw;
+    margin: 0;
+}
+
+#hidden-text {
+    height: 75%;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+    border: solid #333333 1px;
+    opacity: 0;
+}
+
+#hidden-text * {
+    opacity: 0;
+}
+
+#scroll-inv {
+    opacity: 0;
+    width: fit-content;
+}
+
+#scroll-inv > p {
+    margin: 0;
+}

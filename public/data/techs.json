@@ -1,0 +1,292 @@
+{
+    "placeholder": {
+        "link": "",
+        "usedFor": "",
+        "relevant": false
+    },
+    "apache": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apache/apache-original.svg",
+        "usedFor": "",
+        "relevant": false
+    },
+    "bash": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg",
+        "usedFor": "",
+        "relevant": false
+    },
+    "c": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
+        "usedFor": "backend",
+        "relevant": true
+    },
+    "centos": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/centos/centos-original.svg",
+        "usedFor": "os",
+        "relevant": true
+    },
+    "c++": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+        "usedFor": "backend",
+        "relevant": true
+    },
+    "c#": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
+        "usedFor": "backend",
+        "relevant": true
+    },
+    "css": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+        "usedFor": "frontend",
+        "relevant": true
+    },
+    "debian": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/debian/debian-original.svg",
+        "usedFor": "os",
+        "relevant": true
+    },
+    "docker": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+        "usedFor": "",
+        "relevant": false
+    },
+    "eclipse": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg",
+        "usedFor": "ide",
+        "relevant": true
+    },
+    "fedora": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fedora/fedora-original.svg",
+        "usedFor": "os",
+        "relevant": true
+    },
+    "filezilla": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/filezilla/filezilla-original.svg",
+        "usedFor": "",
+        "relevant": false
+    },
+    "git": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+        "usedFor": "versioning",
+        "relevant": true
+    },
+    "github": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+        "usedFor": "versioning",
+        "relevant": true
+    },
+    "go": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg",
+        "usedFor": "backend",
+        "relevant": true
+    },
+    "gradle": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gradle/gradle-original.svg",
+        "usedFor": "backend",
+        "relevant": false
+    },
+    "html": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+        "usedFor": "frontend",
+        "relevant": true
+    },
+    "java": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+        "usedFor": "backend",
+        "relevant": true
+    },
+    "javascript": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+        "usedFor": "frontend",
+        "relevant": true
+    },
+    "jquery": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg",
+        "usedFor": "frontend",
+        "relevant": true
+    },
+    "json": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg",
+        "usedFor": "data",
+        "relevant": true
+    },
+    "linux": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
+        "usedFor": "os",
+        "relevant": false
+    },
+    "lua": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg",
+        "usedFor": "backend",
+        "relevant": true
+    },
+    "macos": {
+        "link": "https://img.icons8.com/ios-filled/100/FFFFFF/mac-logo.png",
+        "usedFor": "os",
+        "relevant": true
+    },
+    "mariadb": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg",
+        "usedFor": "data",
+        "relevant": true
+    },
+    "markdown": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg",
+        "usedFor": "",
+        "relevant": false
+    },
+    "maven": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg",
+        "usedFor": "backend",
+        "relevant": false
+    },
+    "mint": {
+        "link": "https://devicons.railway.com/i/linux-mint.svg",
+        "usedFor": "os",
+        "relevant": true
+    },
+    "mongodb": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+        "usedFor": "data",
+        "relevant": true
+    },
+    "mysql": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+        "usedFor": "data",
+        "relevant": true
+    },
+    "nano": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nano/nano-plain.svg",
+        "usedFor": "ide",
+        "relevant": false
+    },
+    "nginx": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg",
+        "usedFor": "",
+        "relevant": false
+    },
+    "nodejs": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+        "usedFor": "backend",
+        "relevant": true
+    },
+    "npm": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
+        "usedFor": "backend",
+        "relevant": false
+    },
+    "nuget": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nuget/nuget-original.svg",
+        "usedFor": "backend",
+        "relevant": false
+    },
+    "oracle": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg",
+        "usedFor": "data",
+        "relevant": true
+    },
+    "php": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
+        "usedFor": "backend",
+        "relevant": true
+    },
+    "postgresql": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+        "usedFor": "data",
+        "relevant": true
+    },
+    "python": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+        "usedFor": "backend",
+        "relevant": true
+    },
+    "qt": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/qt/qt-original.svg",
+        "usedFor": "ide",
+        "relevant": true
+    },
+    "raspberrypi": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/raspberrypi/raspberrypi-original.svg",
+        "usedFor": "",
+        "relevant": false
+    },
+    "react": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+        "usedFor": "frontend",
+        "relevant": true
+    },
+    "rust": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg",
+        "usedFor": "backend",
+        "relevant": true
+    },
+    "spring": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
+        "usedFor": "",
+        "relevant": false
+    },
+    "sqlite": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg",
+        "usedFor": "data",
+        "relevant": true
+    },
+    "ssh": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ssh/ssh-original.svg",
+        "usedFor": "",
+        "relevant": false
+    },
+    "tomcat": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tomcat/tomcat-original.svg",
+        "usedFor": "",
+        "relevant": false
+    },
+    "typescript": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+        "usedFor": "backend",
+        "relevant": true
+    },
+    "ubuntu": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg",
+        "usedFor": "os",
+        "relevant": true
+    },
+    "uml": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg",
+        "usedFor": "",
+        "relevant": false
+    },
+    "unity": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg",
+        "usedFor": "",
+        "relevant": false
+    },
+    "unix": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unix/unix-original.svg",
+        "usedFor": "os",
+        "relevant": false
+    },
+    "visualstudio": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg",
+        "usedFor": "ide",
+        "relevant": true
+    },
+    "vitejs": {
+        "link": "https://devicons.railway.com/i/vitejs.svg",
+        "usedFor": "frontend",
+        "relevant": true
+    },
+    "vscode": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+        "usedFor": "ide",
+        "relevant": true
+    },
+    "windows": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg",
+        "usedFor": "os",
+        "relevant": true
+    },
+    "xml": {
+        "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xml/xml-original.svg",
+        "usedFor": "data",
+        "relevant": true
+    }
+}
