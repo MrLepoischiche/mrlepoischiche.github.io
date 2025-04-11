@@ -1,2 +1,3 @@
 # My-Portfolio
-Like the repo says, this is my portfolio. Everything about my self and my work is here...unless I forgot about some of my public repos, of course.
+## Where can I look at it in all its glory, and not just the code?
+That feature is coming soon... (Tbh I just need to upload it as a website here)
