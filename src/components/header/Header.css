@@ -1,5 +1,5 @@
 header {
-    /*position: fixed;*/
+    position: fixed;
     height: 100px;
     width: 100vw;
     border: var(--main-border);

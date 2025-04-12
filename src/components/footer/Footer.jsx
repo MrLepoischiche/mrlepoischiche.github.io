@@ -29,7 +29,7 @@ export default function Footer({timers}) {
 
                     <SocialDisplayer
                         id="linkedin-displayer"
-                        title=""
+                        title="Click me to go to my maker's LinkedIn page!"
                         displayedText="@newjeanesteban"
                         isIconSwap={false}
                         defaultIcon="https://img.icons8.com/ios-filled/100/FFFFFF/linkedin.png"
