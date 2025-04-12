@@ -1,8 +1,8 @@
-# My-Portfolio
+# My Portfolio
 
 ## Where can I look at it in all its glory, and not just the code?
 
-That feature is coming soon... (Tbh I just need to upload it as a website here)
+Just type the name of this repo in your navigation bar. It's that simple!
 
 
 # React + Vite
