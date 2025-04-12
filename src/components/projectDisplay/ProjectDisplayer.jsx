@@ -57,6 +57,7 @@ export default function ProjectDisplayer({ techs }) {
     }
 
     let techsObj = Object.fromEntries(techs);
+    console.log(myProjects, techsObj);
 
     return (
         <div id="project-presenter" className="column-direction">
@@ -77,7 +78,7 @@ export default function ProjectDisplayer({ techs }) {
 
                             <div>
                                 {myProjects[projIndex].icons.map(icon => 
-                                    <img key={icon} width="64" height="64" src={techsObj[icon].link} />
+                                    <img key={icon} width="64" height="64" src={(Object.hasOwn(techsObj, "link")) ? techsObj[icon].link : 'null'} />
                                 )}
                             </div>
 
