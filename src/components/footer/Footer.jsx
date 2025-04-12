@@ -11,7 +11,7 @@ export default function Footer({timers}) {
                 <h1 className="rampart-one-regular really-big-letters floating">J</h1>
             </div>
 
-            <div>
+            <div className="column-direction" style={{rowGap: "3cm"}}>
                 <SocialDisplayer
                     id="email-displayer"
                     title="Click me to send my maker an email!"
@@ -19,6 +19,22 @@ export default function Footer({timers}) {
                     isIconSwap={true}
                     defaultIcon="https://img.icons8.com/ios-filled/100/FFFFFF/secured-letter--v1.png"
                     swapperIcon="https://img.icons8.com/ios-filled/100/FFFFFF/letter-with-email-sign.png"
+                    clickHandler={() => {
+                        window.location.href = "mailto:esteban-jean.pro@hotmail.com";
+                    }}
+                    timers={timers}
+                />
+
+                <SocialDisplayer
+                    id="linkedin-displayer"
+                    title=""
+                    displayedText="@newjeanesteban"
+                    isIconSwap={false}
+                    defaultIcon="https://img.icons8.com/ios-filled/100/FFFFFF/linkedin.png"
+                    swapperIcon=""
+                    clickHandler={() => {
+                        window.open("https://linkedin.com/in/newjeanesteban/", "_blank").focus();
+                    }}
                     timers={timers}
                 />
             </div>

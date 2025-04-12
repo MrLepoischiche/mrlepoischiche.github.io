@@ -27,6 +27,7 @@
     align-items: center;
     justify-content: space-evenly;
     border: solid #333333 1px;
+    border-radius: 8%;
     opacity: 0;
 }
 

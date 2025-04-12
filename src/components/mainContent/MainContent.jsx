@@ -68,7 +68,7 @@ export default function MainContent({timers, techs}) {
                     {techs ?
                         <div
                             className="column-direction"
-                            style={{alignItems: "center"}}
+                            style={{alignItems: "center", rowGap: "30px"}}
                         >
                             <p className="audiowide-regular">I adapt to all systems as well</p>
                             <div 

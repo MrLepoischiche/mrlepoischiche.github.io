@@ -3,10 +3,14 @@ import "./SocialDisplayer.css"
 
 import { useState } from "react"
 
-export default function SocialDisplayer({ id, title, displayedText, isIconSwap, defaultIcon, swapperIcon, timers }) {
+export default function SocialDisplayer({ id, title, displayedText, isIconSwap, defaultIcon, swapperIcon, clickHandler, timers }) {
     const lengthState = useState(0);
 
-    function enterMailEvent() {
+    function enterTextEvent() {
+        if (typeof displayedText === 'string' && displayedText.length === 0) {
+            return
+        }
+
         const SOCIAL_DISPLAY = document.getElementById(id);
         const DISPLAY_P = SOCIAL_DISPLAY.querySelector("p");
 
@@ -14,7 +18,7 @@ export default function SocialDisplayer({ id, title, displayedText, isIconSwap, 
             clearInterval(timers[id + "-erasing"]);
         }
         
-        if (isIconSwap) {
+        if (isIconSwap && (typeof swapperIcon === 'string' && swapperIcon.length > 0)) {
             SOCIAL_DISPLAY.querySelector('img').src = swapperIcon;
         }
         DISPLAY_P.style.display = 'block';
@@ -30,7 +34,11 @@ export default function SocialDisplayer({ id, title, displayedText, isIconSwap, 
         }, 75);
     }
     
-    function eraseMailEvent() {
+    function eraseTextEvent() {
+        if (typeof displayedText === 'string' && displayedText.length === 0) {
+            return
+        }
+
         const SOCIAL_DISPLAY = document.getElementById(id);
         const DISPLAY_P = SOCIAL_DISPLAY.querySelector("p");
 
@@ -45,7 +53,7 @@ export default function SocialDisplayer({ id, title, displayedText, isIconSwap, 
     
             if (DISPLAY_P.innerHTML.length <= 0) {
                 DISPLAY_P.style.display = 'none';
-                if (isIconSwap) {
+                if (isIconSwap && (typeof swapperIcon === 'string' && swapperIcon.length > 0)) {
                     SOCIAL_DISPLAY.querySelector('img').src = defaultIcon;
                 }
                 clearInterval(timers[id + "-erasing"]);
@@ -60,8 +68,10 @@ export default function SocialDisplayer({ id, title, displayedText, isIconSwap, 
             style={{alignItems: "center"}}
 
             title={title}
-            onMouseEnter={enterMailEvent}
-            onMouseLeave={eraseMailEvent}
+            onMouseEnter={enterTextEvent}
+            onMouseLeave={eraseTextEvent}
+
+            onClick={clickHandler}
         >
             <img width="100" height="100" src={defaultIcon} />
             <p className="offside-regular" style={{display: "none"}}></p>
