@@ -2,7 +2,7 @@
     gap: 100px;
     align-items: center;
     justify-content: start;
-    margin-top: 120px;
+    padding-top: 120px;
 }
 
 #greeter > div {
