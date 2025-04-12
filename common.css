@@ -1,0 +1,245 @@
+/* --------------------- VARIABLES --------------------- */
+
+:root {
+    --element-background: #353535;
+    --main-text: #dedede;
+    --main-border: solid #777777 2px;
+}
+
+
+/* --------------------- FONTS --------------------- */
+
+@font-face {
+    font-family: "Audiowide";
+    src:
+        local("Audiowide"),
+        url("/fonts/Audiowide-Regular.ttf") format("truetype");
+}
+
+.audiowide-regular {
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20pt;
+}
+
+
+@font-face {
+    font-family: "Bungee Inline";
+    src:
+        local("Bungee Inline"),
+        url("/fonts/BungeeInline-Regular.ttf") format("truetype");
+}
+
+.bungee-inline-regular {
+    font-family: "Bungee Inline", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32pt;
+}
+
+
+@font-face {
+    font-family: "Bungee Shade";
+    src:
+        local("Bungee Shade"),
+        url("/fonts/BungeeShade-Regular.ttf") format("truetype");
+}
+
+.bungee-shade-regular {
+    font-family: "Bungee Shade", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32pt;
+}
+
+
+@font-face {
+    font-family: "Offside";
+    src:
+        local("Offside"),
+        url("/fonts/Offside-Regular.ttf") format("truetype");
+}
+
+.offside-regular {
+    font-family: "Offside", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18pt;
+}
+
+@font-face {
+    font-family: "Oregano";
+    src:
+        local("Oregano"),
+        url("/fonts/Offside-Regular.ttf") format("truetype");
+}
+
+.oregano-regular {
+    font-family: "Oregano", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24pt;
+}
+
+
+@font-face {
+    font-family: "Rampart One";
+    src:
+        local("Rampart One"),
+        url("/fonts/RampartOne-Regular.ttf") format("truetype");
+}
+
+.rampart-one-regular {
+    font-family: "Rampart One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32pt;
+}
+
+
+@font-face {
+    font-family: "Vast Shadow";
+    src:
+        local("Vast Shadow"),
+        url("/fonts/VastShadow-Regular.ttf") format("truetype");
+}
+
+.vast-shadow-regular {
+    font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* --------------------- ANIMATIONS --------------------- */
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes FadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+  
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(-7px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+}
+
+
+/* --------------------- SCROLL BAR --------------------- */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: white;
+}
+
+
+/* --------------------- ELEMENT-SPECIFIC --------------------- */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: black;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+div, section, header, footer {
+    display: flex;
+}
+
+a, p, h1, h2, img {
+    color: var(--main-text);
+}
+
+a, p {
+    margin: 0;
+    font-size: 20pt;
+    text-decoration: none;
+}
+
+a[href^="#"] {
+    scroll-behavior: smooth;
+}
+
+a:hover {
+    color: #ababab;
+    text-decoration: none;
+}
+
+
+/* --------------------- CLASS-SPECIFIC --------------------- */
+
+.really-big-letters {
+    font-size: 80pt;
+}
+
+.column-direction {
+    flex-direction: column;
+}
+
+.text-block {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 150px;
+}
+
+.text-block > p, .text-block > h1, .text-block > h2 {
+    text-align: center;
+}
+
+
+/* --------------------- ID-SPECIFIC --------------------- */
+
+#root {
+    animation: FadeIn 1s ease-in 1 forwards;
+}
+
+
+#content {
+    align-items: center;
+    justify-content: start;
+}
+
+#content > div {
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+
+#content > div > * {
+    padding-top: 35%;
+    padding-bottom: 35%;
+}
