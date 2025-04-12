@@ -84,9 +84,9 @@ export default function Greeter({timers}) {
     return (
         <section id="greeter" className="column-direction">
             <div id="greet-text" className="column-direction">
-                <h1 className="bungee-shade-regular">Esteban JEAN</h1>
+                <h1 className="rampart-one-regular" style={{fontSize: "44pt"}}>Esteban JEAN</h1>
                 <HiddenText timers={timers} />
-                <h1 className="bungee-inline-regular">Junior Developer</h1>
+                <h1 className="rampart-one-regular" style={{fontSize: "44pt"}}>Full-Stack Developer</h1>
             </div>
             <div id="scroll-inv" className="column-direction">
                 <p className="offside-regular">Scroll !</p>
