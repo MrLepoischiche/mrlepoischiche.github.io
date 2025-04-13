@@ -119,6 +119,18 @@ export default function Page() {
         }, 500);
     }
 
+    // Smooth scroll on all links inside page
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+    
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    
+
     // Whole page's content is returned to main.jsx
     return (
     <>

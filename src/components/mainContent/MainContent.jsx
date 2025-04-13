@@ -55,8 +55,8 @@ export default function MainContent({timers, techs}) {
     return (
         <section id="content" className="column-direction">
             <div className="column-direction">
-                <div className="text-block">
-                    <h1 id="about" className="audiowide-regular" style={{fontSize: "28pt"}}>Practicing since <strong style={{fontSize: "42pt"}}>2018</strong></h1>
+                <div id="about" className="text-block">
+                    <h1 className="audiowide-regular" style={{fontSize: "28pt"}}>Practicing since <strong style={{fontSize: "42pt"}}>2018</strong></h1>
 
                     {/* Doesn't work */}
                     {techs ?
@@ -84,8 +84,6 @@ export default function MainContent({timers, techs}) {
                         :
                         <p>Techs not loaded.</p>
                     }
-
-                    <h2 className="oregano-regular">I may have little to no job experience, but that won't stop me from giving my collaborators a hand-made, unforgettable experience.</h2>
                 </div>
 
                 <ProjectDisplayer techs={techs} />

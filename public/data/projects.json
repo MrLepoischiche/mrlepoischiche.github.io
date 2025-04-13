@@ -2,22 +2,29 @@
     {
         "img_location": "/data/img/mastermind_presentation.png",
         "name": "MasterMind",
-        "icons": ["c", "nano"],
+        "icons": ["c"],
         "description": "Multiplayer TCP/IP MasterMind game.",
         "github_link": "https://github.com/MrLepoischiche/Old-Mastermind-Game"
     },
     {
         "img_location": "/data/img/netcat_presentation.png",
         "name": "Chat App",
-        "icons": ["go", "vscode"],
+        "icons": ["go"],
         "description": "P2P server where clients connect with Linux's \"nc\" command.",
         "github_link": "https://github.com/MrLepoischiche/Net-Cat"
     },
     {
         "img_location": "",
         "name": "Cardia",
-        "icons": ["html", "css", "javascript", "go", "vscode"],
-        "description": "100% online card games website to play all kinds of card games on, without any gambling mechanic.",
+        "icons": ["html", "css", "javascript", "go"],
+        "description": "100% online card games website to play all kinds of card games on, completely free of any gambling mechanic.",
         "github_link": "https://github.com/MrLepoischiche/WebCards"
+    },
+    {
+        "img_location": "",
+        "name": "This portfolio",
+        "icons": ["html", "css", "javascript", "react"],
+        "description": "Right here!",
+        "github_link": "https://github.com/MrLepoischiche/ejean.github.io"
     }
 ]

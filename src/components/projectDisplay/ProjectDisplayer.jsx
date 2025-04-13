@@ -60,7 +60,7 @@ export default function ProjectDisplayer({ techs }) {
 
     return (
         <div id="project-presenter" className="column-direction">
-            <p id="projects" className="audiowide-regular">My Projects</p>
+            <p className="audiowide-regular">My Projects</p>
             <div>
                 <NavigationButton imgLink="https://img.icons8.com/ios/50/FFFFFF/back--v1.png" clickHandler={prevProject} />
 
@@ -70,10 +70,10 @@ export default function ProjectDisplayer({ techs }) {
                             <img
                                 className='offside-regular'
                                 src={myProjects[projIndex].img_location ? (myProjects[projIndex].img_location) : null}
-                                alt='No visual yet... Stay tuned!'
+                                alt={myProjects[projIndex].name === "This portfolio" ? 'No need for an image' : 'No visual yet... Stay tuned!'}
                             />
                             <p className='oregano-regular'><strong>{myProjects[projIndex].name}</strong></p>
-                            <p className='oregano-regular'>{myProjects[projIndex].description}</p>
+                            <p className='oregano-regular centered-text'>{myProjects[projIndex].description}</p>
 
                             <div>
                                 {myProjects[projIndex].icons.map(icon => 
@@ -81,7 +81,7 @@ export default function ProjectDisplayer({ techs }) {
                                 )}
                             </div>
 
-                            <a className='oregano-regular' href={myProjects[projIndex].github_link}>Click here to Access Repo</a>
+                            <a className='oregano-regular' href={myProjects[projIndex].github_link} target='_blank'>Click here to Access Repo</a>
                         </div>
                     )
                     :
