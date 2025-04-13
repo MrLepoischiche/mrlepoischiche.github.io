@@ -4,6 +4,8 @@
 
 Just type the name of this repo in your navigation bar. It's that simple!
 
+If GitHub shows a 404 page, there is either a problem or an upcoming update. In both cases, please do bear with me.
+
 
 # React + Vite
 
