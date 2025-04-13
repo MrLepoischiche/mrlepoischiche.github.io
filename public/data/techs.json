@@ -159,6 +159,11 @@
         "usedFor": "ide",
         "relevant": false
     },
+    "netbeans": {
+        "link": "/public/data/img/apache-netbeans.svg",
+        "usedFor": "ide",
+        "relevant": true
+    },
     "nginx": {
         "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg",
         "usedFor": "",
