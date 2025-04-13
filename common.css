@@ -1,7 +1,7 @@
 /* --------------------- VARIABLES --------------------- */
 
 :root {
-    --element-background: #353535;
+    --element-background: #303030;
     --main-text: #dedede;
     --main-border: solid #777777 2px;
 }
@@ -16,56 +16,11 @@
         url("/fonts/Audiowide-Regular.ttf") format("truetype");
 }
 
-.audiowide-regular {
-    font-family: "Audiowide", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20pt;
-}
-
-
-@font-face {
-    font-family: "Bungee Inline";
-    src:
-        local("Bungee Inline"),
-        url("/fonts/BungeeInline-Regular.ttf") format("truetype");
-}
-
-.bungee-inline-regular {
-    font-family: "Bungee Inline", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32pt;
-}
-
-
-@font-face {
-    font-family: "Bungee Shade";
-    src:
-        local("Bungee Shade"),
-        url("/fonts/BungeeShade-Regular.ttf") format("truetype");
-}
-
-.bungee-shade-regular {
-    font-family: "Bungee Shade", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32pt;
-}
-
-
 @font-face {
     font-family: "Offside";
     src:
         local("Offside"),
         url("/fonts/Offside-Regular.ttf") format("truetype");
-}
-
-.offside-regular {
-    font-family: "Offside", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18pt;
 }
 
 @font-face {
@@ -75,14 +30,6 @@
         url("/fonts/Offside-Regular.ttf") format("truetype");
 }
 
-.oregano-regular {
-    font-family: "Oregano", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24pt;
-}
-
-
 @font-face {
     font-family: "Rampart One";
     src:
@@ -90,25 +37,11 @@
         url("/fonts/RampartOne-Regular.ttf") format("truetype");
 }
 
-.rampart-one-regular {
-    font-family: "Rampart One", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32pt;
-}
-
-
 @font-face {
     font-family: "Vast Shadow";
     src:
         local("Vast Shadow"),
         url("/fonts/VastShadow-Regular.ttf") format("truetype");
-}
-
-.vast-shadow-regular {
-    font-family: "Vast Shadow", serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 
@@ -188,10 +121,6 @@ a, p {
     text-decoration: none;
 }
 
-a[href^="#"] {
-    scroll-behavior: smooth;
-}
-
 a:hover {
     color: #ababab;
     text-decoration: none;
@@ -200,8 +129,51 @@ a:hover {
 
 /* --------------------- CLASS-SPECIFIC --------------------- */
 
+.audiowide-regular {
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20pt;
+}
+
+.offside-regular {
+    font-family: "Offside", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18pt;
+}
+
+.oregano-regular {
+    font-family: "Oregano", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24pt;
+}
+
+.rampart-one-regular {
+    font-family: "Rampart One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32pt;
+}
+
+.vast-shadow-regular {
+    font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 .really-big-letters {
     font-size: 80pt;
+}
+
+.biggerOnHover {
+    transition: font-size 250ms;
+}
+
+.biggerOnHover:hover {
+    font-size: 36pt;
 }
 
 .column-direction {
@@ -215,6 +187,10 @@ a:hover {
     row-gap: 150px;
 }
 
+.centered-text {
+    text-align: center;
+}
+
 .text-block > p, .text-block > h1, .text-block > h2 {
     text-align: center;
 }
@@ -226,20 +202,17 @@ a:hover {
     animation: FadeIn 1s ease-in 1 forwards;
 }
 
+#circular-cursor {
+    pointer-events: none;
 
-#content {
-    align-items: center;
-    justify-content: start;
-}
-
-#content > div {
-    width: 90%;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 120px;
-}
-
-#content > div > * {
-    padding-top: 35%;
-    padding-bottom: 35%;
+    position: absolute;
+    left: calc(50vw - 25px);
+    top: calc(50vh - 25px);
+    
+    background-color: transparent;
+    border: solid gray 1px;
+    border-radius: 100%;
+    z-index: 1;
+    opacity: 0;
+    /*transition: opacity 500ms;*/
 }
