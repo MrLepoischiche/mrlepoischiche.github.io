@@ -1,6 +1,5 @@
 import '/public/common.css'
 
-import CircularCursor from './components/circularCursor/CircularCursor';
 import Header from './components/header/Header';
 import Greeter from './components/greeter/Greeter';
 import Footer from './components/footer/Footer';
@@ -94,10 +93,36 @@ export default function Page() {
         FetchMyTechs();
     }, []);
 
+    // Circular cursor moving with mouse
+    window.onmousemove = (e) => {
+        const CIRCULAR_CURSOR = document.getElementById("circular-cursor");
+        let circleSize = Number(CIRCULAR_CURSOR.style.width.slice(0, -2));
+
+        CIRCULAR_CURSOR.style.opacity = '1';
+        CIRCULAR_CURSOR.style.left = String(e.clientX+window.scrollX - (circleSize / 2)) + 'px';
+        CIRCULAR_CURSOR.style.top = String(e.clientY+window.scrollY - (circleSize / 2)) + 'px';
+
+        if (AllTimers.cursorDisappearTimeout) {
+            clearTimeout(AllTimers.cursorDisappearTimeout);
+        }
+
+        AllTimers.cursorDisappearTimeout = setTimeout(() => {
+            AllTimers.cursorFadeOutEffect = setInterval(
+                () => {
+                    if (CIRCULAR_CURSOR.style.opacity > 0) {
+                        CIRCULAR_CURSOR.style.opacity -= 0.1;
+                    } else {
+                        clearInterval(AllTimers.cursorFadeOutEffect);
+                    }
+                }, 25
+            );
+        }, 500);
+    }
+
     // Whole page's content is returned to main.jsx
     return (
     <>
-        <CircularCursor timers={AllTimers} />
+        <div id="circular-cursor" style={{width: "50px", height: "50px"}}></div>
         
         <Header/>
         <Greeter timers={AllTimers} />

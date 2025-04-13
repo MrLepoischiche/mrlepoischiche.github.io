@@ -226,20 +226,17 @@ a:hover {
     animation: FadeIn 1s ease-in 1 forwards;
 }
 
+#circular-cursor {
+    pointer-events: none;
 
-#content {
-    align-items: center;
-    justify-content: start;
-}
-
-#content > div {
-    width: 90%;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 120px;
-}
-
-#content > div > * {
-    padding-top: 35%;
-    padding-bottom: 35%;
+    position: absolute;
+    left: calc(50vw - 25px);
+    top: calc(50vh - 25px);
+    
+    background-color: transparent;
+    border: solid gray 1px;
+    border-radius: 100%;
+    z-index: 1;
+    opacity: 0;
+    /*transition: opacity 500ms;*/
 }

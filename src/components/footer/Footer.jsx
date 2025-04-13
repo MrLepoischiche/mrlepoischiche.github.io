@@ -13,7 +13,7 @@ export default function Footer({timers}) {
                     <h1 className="rampart-one-regular really-big-letters floating">J</h1>
                 </div>
 
-                <div className="column-direction" style={{rowGap: "3cm"}}>
+                <div className="column-direction" style={{rowGap: "2cm"}}>
                     <SocialDisplayer
                         id="email-displayer"
                         title="Click me to send my maker an email!"
@@ -36,6 +36,19 @@ export default function Footer({timers}) {
                         swapperIcon=""
                         clickHandler={() => {
                             window.open("https://linkedin.com/in/newjeanesteban/", "_blank").focus();
+                        }}
+                        timers={timers}
+                    />
+
+                    <SocialDisplayer
+                        id="github-displayer"
+                        title="Click me to go to my maker's GitHub page!"
+                        displayedText="@MrLepoischiche"
+                        isIconSwap={false}
+                        defaultIcon="https://img.icons8.com/ios-filled/100/FFFFFF/github.png"
+                        swapperIcon=""
+                        clickHandler={() => {
+                            window.open("https://github.com/MrLepoischiche", "_blank").focus();
                         }}
                         timers={timers}
                     />
