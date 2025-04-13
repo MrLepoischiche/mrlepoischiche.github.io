@@ -157,7 +157,7 @@
     "nano": {
         "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nano/nano-plain.svg",
         "usedFor": "ide",
-        "relevant": false
+        "relevant": true
     },
     "netbeans": {
         "link": "/public/data/img/apache-netbeans.svg",
@@ -268,6 +268,11 @@
         "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unix/unix-original.svg",
         "usedFor": "os",
         "relevant": false
+    },
+    "vim": {
+        "link": "https://devicons.railway.com/i/vim.svg",
+        "usedFor": "ide",
+        "relevant": true
     },
     "visualstudio": {
         "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg",

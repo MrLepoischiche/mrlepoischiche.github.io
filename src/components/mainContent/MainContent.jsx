@@ -70,12 +70,24 @@ export default function MainContent({timers, techs}) {
                             className="column-direction"
                             style={{alignItems: "center", rowGap: "30px"}}
                         >
-                            <p className="audiowide-regular">I adapt to all systems as well</p>
+                            <p className="audiowide-regular">I adapt to all systems as well, whether it be OSs...</p>
                             <div 
                                 style={{columnGap: "50px"}}
                             >
                                 {techs.map(([name, info]) => {
                                     if (info.relevant && info.usedFor === "os") {
+                                        return (<img key={name} width="64" height="64" src={info.link} />);
+                                    }
+                                })}
+                            </div>
+                            
+                            <p className="audiowide-regular">...or IDEs</p>
+
+                            <div
+                                style={{columnGap: "50px"}}
+                            >
+                                {techs.map(([name, info]) => {
+                                    if (info.relevant && info.usedFor === "ide") {
                                         return (<img key={name} width="64" height="64" src={info.link} />);
                                     }
                                 })}
