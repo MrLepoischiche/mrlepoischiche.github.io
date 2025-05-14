@@ -98,13 +98,8 @@
 /* --------------------- ELEMENT-SPECIFIC --------------------- */
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
     background-color: black;
     overflow-x: hidden;
-    margin: 0;
 }
 
 div, section, header, footer {
@@ -199,6 +194,12 @@ a:hover {
 /* --------------------- ID-SPECIFIC --------------------- */
 
 #root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    overflow-x: hidden;
+    margin: 0;
     animation: FadeIn 1s ease-in 1 forwards;
 }
 
