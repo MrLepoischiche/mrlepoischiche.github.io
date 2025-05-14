@@ -1,5 +1,5 @@
 #greeter {
-    gap: 100px;
+    gap: 2vh;
     align-items: center;
     justify-content: start;
     padding-top: 120px;
@@ -7,7 +7,7 @@
 
 #greeter > div {
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #greet-text {
@@ -16,30 +16,42 @@
 }
 
 #greet-text > h1 {
+    font-size: 44pt;
+    text-align: center;
     letter-spacing: 8px;
     word-spacing: 25vw;
     margin: 0;
 }
 
 #hidden-text {
-    height: 75%;
-    width: 50%;
+    height: 80%;
+    width: 70%;
     align-items: center;
     justify-content: space-evenly;
-    border: solid #333333 1px;
-    border-radius: 8%;
     opacity: 0;
 }
 
 #hidden-text * {
+    text-align: center;
     opacity: 0;
 }
 
 #scroll-inv {
     opacity: 0;
-    width: fit-content;
 }
 
 #scroll-inv > p {
     margin: 0;
+}
+
+@media (min-height: 668px) {
+    #scroll-inv {
+        height: 8vh
+    }
+}
+
+@media (max-width: 975px) {
+    #greet-text > h1 {
+        font-size: 6vw;
+    }
 }

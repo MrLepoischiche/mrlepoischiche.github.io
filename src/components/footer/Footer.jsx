@@ -54,7 +54,7 @@ export default function Footer({timers}) {
                     />
                 </div>
 
-                <p className="offside-regular" style={{fontSize: "14pt"}}>
+                <p id='disclaimer' className="offside-regular">
                     Certified 0% AI. Everything is made with my own two hands!
                 </p>
             </footer>

@@ -56,9 +56,8 @@ export default function MainContent({timers, techs}) {
         <section id="content" className="column-direction">
             <div className="column-direction">
                 <div id="about" className="text-block">
-                    <h1 className="audiowide-regular" style={{fontSize: "28pt"}}>Practicing since <strong style={{fontSize: "42pt"}}>2018</strong></h1>
+                    <h1 className="audiowide-regular" style={{fontSize: "5vw"}}>Practicing since <strong style={{fontSize: "6vw"}}>2018</strong></h1>
 
-                    {/* Doesn't work */}
                     {techs ?
                         <SpecialtyCards techs={techs} />
                         :
@@ -66,14 +65,11 @@ export default function MainContent({timers, techs}) {
                     }
 
                     {techs ?
-                        <div
+                        <div id='the-rest'
                             className="column-direction"
-                            style={{alignItems: "center", rowGap: "30px"}}
                         >
                             <p className="audiowide-regular">I adapt to all systems as well, whether it be OSs...</p>
-                            <div 
-                                style={{columnGap: "50px"}}
-                            >
+                            <div>
                                 {techs.map(([name, info]) => {
                                     if (info.relevant && info.usedFor === "os") {
                                         return (<img key={name} width="64" height="64" src={info.link} />);
@@ -83,9 +79,7 @@ export default function MainContent({timers, techs}) {
                             
                             <p className="audiowide-regular">...or IDEs</p>
 
-                            <div
-                                style={{columnGap: "50px"}}
-                            >
+                            <div>
                                 {techs.map(([name, info]) => {
                                     if (info.relevant && info.usedFor === "ide") {
                                         return (<img key={name} width="64" height="64" src={info.link} />);

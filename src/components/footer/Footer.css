@@ -9,5 +9,13 @@ footer {
 footer > div {
     align-items: center;
     justify-content: space-around;
-    width: 30%;
+    width: 50%;
+}
+
+#disclaimer {
+    width: 95%;
+    font-size: 14pt;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 15px;
 }

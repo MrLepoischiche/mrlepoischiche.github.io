@@ -51,6 +51,27 @@
     flex-wrap: wrap;
 }
 
+#the-rest {
+    align-items: center;
+    row-gap: 30px;
+}
+
+#the-rest > p {
+    text-align: center;
+}
+
+#the-rest > div {
+    column-gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 615px) {
+    .spe-card {
+        width: 80vw;
+    }
+}
+
 @media (max-width: 800px) {
     #spe-cards {
         grid-template-columns: 1fr;

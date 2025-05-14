@@ -19,12 +19,30 @@
 
 #project-container {
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
-    height: 85vh;
+    height: 75vh;
 }
 
 #project-container img {
     max-width: 80vw;
     max-height: 55vh;
+}
+
+@media (max-width: 790px) {
+    #project-container > p, #project-container > a {
+        font-size: 4vw;
+    }
+}
+
+@media (max-height: 485px) {
+    #project-container {
+        height: 70vh;
+    }
+}
+
+@media (max-height: 475px) {
+    #project-container {
+        height: fit-content;
+    }
 }

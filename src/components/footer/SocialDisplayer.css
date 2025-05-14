@@ -1,3 +1,7 @@
 .social-displayer {
     cursor: pointer;
 }
+
+.social-displayer > p {
+    text-align: center;
+}
