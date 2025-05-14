@@ -160,7 +160,7 @@
         "relevant": true
     },
     "netbeans": {
-        "link": "/public/data/img/apache-netbeans.svg",
+        "link": "/data/img/apache-netbeans.svg",
         "usedFor": "ide",
         "relevant": true
     },
