@@ -1,23 +1,13 @@
-import '/public/common.css'
 import './ProjectDisplayer.css';
 import { useState, useEffect } from 'react';
-
-
-function NavigationButton({imgLink, clickHandler}) {
-    return (
-        <img width="50" height="50" src={imgLink} onClick={clickHandler} />
-    );
-}
+import ProjectCard from './ProjectCard';
 
 
 export default function ProjectDisplayer({ techs }) {
     const [myProjects, setMyProj] = useState([]);
-    const [projIndex, setProjIndex] = useState(0);
 
     async function FetchMyProjects() {
         try {
-            let projectsArray;
-            
             const projResp = await fetch('/data/projects.json',
                 {
                     headers : { 
@@ -26,9 +16,12 @@ export default function ProjectDisplayer({ techs }) {
                     }
                 }
             );
+            if (!projResp.ok) {
+                throw new Error('Network response was not ok');
+            }
 
-            await projResp.json().then(projects => {projectsArray = projects});
-            setMyProj(projectsArray);
+            const projData = await projResp.json();
+            setMyProj(projData);
         } catch (error) {
             console.warn(error, "error");
         }
@@ -38,57 +31,21 @@ export default function ProjectDisplayer({ techs }) {
         FetchMyProjects();
     }, []);
 
-    function prevProject() {
-        if (projIndex === 0) {
-            setProjIndex(myProjects.length - 1);
-            return;
-        }
-
-        setProjIndex(projIndex - 1);
-    }
-
-    function nextProject() {
-        if (projIndex === myProjects.length - 1) {
-            setProjIndex(0);
-            return;
-        }
-
-        setProjIndex(projIndex + 1);
-    }
-
-    let techsObj = Object.fromEntries(techs);
+    let elementToRender =
+        (myProjects && myProjects.length > 0)
+        ? myProjects.map((project, index) =>
+            <ProjectCard key={index} project={project} itsTechs={
+                techs
+                .filter(([key, value]) => project.techs.includes(key))
+                .map(([key, value]) => value)
+            } />)
+        : <p className='oregano-regular'>No projects available</p>;
 
     return (
-        <div id="project-presenter" className="column-direction">
-            <p className="audiowide-regular">My Projects</p>
-            <div>
-                <NavigationButton imgLink="https://img.icons8.com/ios/50/FFFFFF/back--v1.png" clickHandler={prevProject} />
-
-                {
-                    myProjects.length > 0 ? (
-                        <div id='project-container' className='column-direction'>
-                            <img
-                                className='offside-regular'
-                                src={myProjects[projIndex].img_location ? (myProjects[projIndex].img_location) : null}
-                                alt={myProjects[projIndex].name === "This portfolio" ? 'No need for an image' : 'No visual yet... Stay tuned!'}
-                            />
-                            <p className='oregano-regular'><strong>{myProjects[projIndex].name}</strong></p>
-                            <p className='oregano-regular centered-text'>{myProjects[projIndex].description}</p>
-
-                            <div>
-                                {myProjects[projIndex].icons.map(icon => 
-                                    <img key={icon} width="64" height="64" src={(Object.hasOwn(techsObj, icon)) ? techsObj[icon].link : 'null'} />
-                                )}
-                            </div>
-
-                            <a className='oregano-regular' href={myProjects[projIndex].github_link} target='_blank'>Click here to Access Repo</a>
-                        </div>
-                    )
-                    :
-                    <p className='oregano-regular'>Projects not loaded.</p>
-                }
-                
-                <NavigationButton imgLink="https://img.icons8.com/ios/50/FFFFFF/forward--v1.png" clickHandler={nextProject} />
+        <div id="project-presenter" className='flex flex-col items-center justify-center'>
+            <p className="audiowide-regular !text-5xl">My Projects</p>
+            <div className='!grid !w-[98vw] !mt-12 items-center justify-items-center gap-4 md:!grid-cols-1 lg:!grid-cols-2 xl:!grid-cols-3'>
+                {elementToRender}
             </div>
         </div>
     );

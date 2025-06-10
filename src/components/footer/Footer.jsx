@@ -1,19 +1,30 @@
 import '/public/common.css'
 import './Footer.css'
+import { motion } from 'framer-motion';
 
 import SocialDisplayer from './SocialDisplayer';
 
 export default function Footer({timers}) {
     return (
-        <div className="column-direction">
+        <div className="flex-col">
             <div style={{height: "50vh", backgroundImage: "linear-gradient(180deg, black, var(--element-background))"}}></div>
-            <footer id="contact" className="column-direction">
+            <footer id="contact" className="flex-col">
                 <div>
-                    <h1 className="rampart-one-regular really-big-letters floating">E</h1>
-                    <h1 className="rampart-one-regular really-big-letters floating">J</h1>
+                    <motion.h1
+                        className="rampart-one-regular !text-9xl"
+                        whileHover={{ scale: 1.1 }}
+                    >
+                        E
+                    </motion.h1>
+                    <motion.h1
+                        className="rampart-one-regular !text-9xl"
+                        whileHover={{ scale: 1.1 }}
+                    >
+                        J
+                    </motion.h1>
                 </div>
 
-                <div className="column-direction" style={{rowGap: "2cm"}}>
+                <div className="flex-col" style={{rowGap: "2cm"}}>
                     <SocialDisplayer
                         id="email-displayer"
                         title="Click me to send my maker an email!"
@@ -55,7 +66,7 @@ export default function Footer({timers}) {
                 </div>
 
                 <p id='disclaimer' className="offside-regular">
-                    Certified 0% AI. Everything is made with my own two hands!
+                    Esteban JEAN 2025. All rights reserved.
                 </p>
             </footer>
         </div>

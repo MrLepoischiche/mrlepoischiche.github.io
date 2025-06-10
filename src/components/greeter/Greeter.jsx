@@ -3,7 +3,7 @@ import './Greeter.css'
 
 function HiddenText({timers}) {
     return (
-        <div id="hidden-text" className="column-direction"
+        <div id="hidden-text" className="flex-col"
             onMouseEnter={(event) => {
                 clearInterval(timers.hidingDivDisappearInterval);
                 timers.hidingDivAppearInterval = setInterval(
@@ -74,21 +74,21 @@ function HiddenText({timers}) {
                 }
             }}
         >
-            <h2 className="vast-shadow-regular">This portfolio is prone to changes</h2>
-            <h2 className="vast-shadow-regular">Like everything in this world</h2>
+            <h2 className="vast-shadow-regular !text-2xl">This portfolio is prone to changes</h2>
+            <h2 className="vast-shadow-regular !text-2xl">Like everything in this world</h2>
         </div>
     );
 }
 
 export default function Greeter({timers}) {
     return (
-        <section id="greeter" className="column-direction">
-            <div id="greet-text" className="column-direction">
+        <section id="greeter" className="flex-col">
+            <div id="greet-text" className="flex-col">
                 <h1 className="rampart-one-regular">Esteban JEAN</h1>
                 <HiddenText timers={timers} />
                 <h1 className="rampart-one-regular">Full-Stack Developer</h1>
             </div>
-            <div id="scroll-inv" className="column-direction">
+            <div id="scroll-inv" className="flex-col">
                 <p className="offside-regular">Scroll !</p>
                 <img width="26" height="26" src="https://img.icons8.com/metro/26/FFFFFF/long-arrow-down.png"/>
             </div>

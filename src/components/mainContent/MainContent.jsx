@@ -6,7 +6,7 @@ import ProjectDisplayer from '../projectDisplay/ProjectDisplayer';
 
 function SpecialtyCard({id, icon, name, techs}) {
     return (
-        <div className="spe-card column-direction">
+        <div className="spe-card flex-col">
             <img src={`https://img.icons8.com/${icon}.png`} alt="Icon" />
             <h1 className="audiowide-regular">{name}</h1>
             <div>
@@ -53,8 +53,8 @@ function SpecialtyCards({techs}) {
 
 export default function MainContent({timers, techs}) {
     return (
-        <section id="content" className="column-direction">
-            <div className="column-direction">
+        <section id="content" className="flex-col">
+            <div className="flex-col">
                 <div id="about" className="text-block">
                     <h1 className="audiowide-regular" style={{fontSize: "5vw"}}>Practicing since <strong style={{fontSize: "6vw"}}>2018</strong></h1>
 
@@ -66,7 +66,7 @@ export default function MainContent({timers, techs}) {
 
                     {techs ?
                         <div id='the-rest'
-                            className="column-direction"
+                            className="flex-col"
                         >
                             <p className="audiowide-regular">I adapt to all systems as well, whether it be OSs...</p>
                             <div>

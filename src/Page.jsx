@@ -56,15 +56,31 @@ export default function Page() {
     // Timed events (aka Intervals and Timeouts)
     let AllTimers = {};
 
-
     addScrollAppearEvent(AllTimers);
     addScrollDisappearEvent(AllTimers);
 
-    const FLOATING_ELEMENTS = document.querySelectorAll('.floating');
-    for (let i = 0; i < FLOATING_ELEMENTS.length; i++) {
-        FLOATING_ELEMENTS[i].style.animation = `MoveUpDown 3s ${i/2}s ease infinite`;
-    }
-    
+    // Animation au scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // Observer les éléments à animer
+    document.querySelectorAll('.spe-card, .project-card').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
 
     // Techs' and Projects' data at page's root
     const [myTechs, setMyTechs] = useState([]);
