@@ -1,7 +1,9 @@
+@import 'tailwindcss';
+
 /* --------------------- VARIABLES --------------------- */
 
 :root {
-    --element-background: #303030;
+    --element-background: #202020;
     --main-text: #dedede;
     --main-border: solid #777777 2px;
 }
@@ -64,15 +66,6 @@
         opacity: 0;
     }
 }
-  
-@keyframes MoveUpDown {
-    0%, 100% {
-        transform: translateY(-7px);
-    }
-    50% {
-        transform: translateY(5px);
-    }
-}
 
 
 /* --------------------- SCROLL BAR --------------------- */
@@ -106,7 +99,7 @@ div, section, header, footer {
     display: flex;
 }
 
-a, p, h1, h2, img {
+a, p, h1, h2, h3, img {
     color: var(--main-text);
 }
 
@@ -159,18 +152,6 @@ a:hover {
 }
 
 
-.really-big-letters {
-    font-size: 80pt;
-}
-
-.biggerOnHover {
-    transition: font-size 250ms;
-}
-
-.biggerOnHover:hover {
-    font-size: 36pt;
-}
-
 .column-direction {
     flex-direction: column;
 }
@@ -180,10 +161,6 @@ a:hover {
     align-items: center;
     justify-content: center;
     row-gap: 150px;
-}
-
-.centered-text {
-    text-align: center;
 }
 
 .text-block > p, .text-block > h1, .text-block > h2 {
