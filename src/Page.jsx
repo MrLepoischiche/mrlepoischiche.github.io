@@ -75,7 +75,7 @@ export default function Page() {
     }, observerOptions);
 
     // Observer les éléments à animer
-    document.querySelectorAll('.spe-card, .project-card').forEach(el => {
+    document.querySelectorAll('.fade-in-on-scroll').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';

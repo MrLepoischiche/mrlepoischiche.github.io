@@ -2,6 +2,9 @@ import './ProjectDisplayer.css';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
+import DevIcon from '../DevIcon';
+
+
 export default function ProjectCard({ project, itsTechs }) {
     const [currentImg, setCurrentImg] = useState(0);
 
@@ -15,7 +18,7 @@ export default function ProjectCard({ project, itsTechs }) {
 
     return (
         <motion.div
-            className="project-card"
+            className="fade-in-on-scroll project-card"
             whileFocus={{ scale: 1.05 }}
         >
             {(project.screenshots.length !== 0 && project.screenshots[0] !== "") ? (
@@ -34,7 +37,7 @@ export default function ProjectCard({ project, itsTechs }) {
             {itsTechs ? (
                 <span className='flex flex-wrap justify-center gap-2'>
                     {itsTechs.map((tech, index) => (
-                        <img width={50} height={50} key={index} src={tech.link} />
+                        <DevIcon key={index} width={50} height={50} link={tech.link} name={tech.name} />
                     ))}
                 </span>
             ) : (

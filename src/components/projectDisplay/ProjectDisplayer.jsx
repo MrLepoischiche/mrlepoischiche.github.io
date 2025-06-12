@@ -44,7 +44,7 @@ export default function ProjectDisplayer({ techs }) {
     return (
         <div id="project-presenter" className='flex flex-col items-center justify-center'>
             <p className="audiowide-regular !text-5xl">My Projects</p>
-            <div className='!grid !w-[98vw] !mt-12 items-center justify-items-center gap-4 md:!grid-cols-1 lg:!grid-cols-2 xl:!grid-cols-3'>
+            <div className='!grid !w-[98vw] !mt-12 items-center justify-items-center gap-10 md:!grid-cols-1 lg:!grid-cols-2 xl:!grid-cols-3'>
                 {elementToRender}
             </div>
         </div>

@@ -64,7 +64,7 @@ export default function SocialDisplayer({ id, title, displayedText, isIconSwap, 
     return (
         <div
             id={id}
-            className="social-displayer flex-col"
+            className="fade-in-on-scroll social-displayer flex-col"
             style={{alignItems: "center"}}
 
             title={title}

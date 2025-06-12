@@ -7,7 +7,7 @@
         "techs": ["c"],
         "description": "Multiplayer TCP/IP MasterMind game.",
         "links": [
-            {"name": "Code Source", "url": "https://github.com/MrLepoischiche/Old-Mastermind-Game", "icon": "github"}
+            {"name": "Source Code", "url": "https://github.com/MrLepoischiche/Old-Mastermind-Game", "icon": "github"}
         ]
     },
     {
@@ -18,7 +18,7 @@
         "techs": ["go"],
         "description": "P2P server where clients connect with Linux's \"nc\" command.",
         "links": [
-            {"name": "Code Source", "url": "https://github.com/MrLepoischiche/Net-Cat", "icon": "github"}
+            {"name": "Source Code", "url": "https://github.com/MrLepoischiche/Net-Cat", "icon": "github"}
         ] 
     },
     {
@@ -29,7 +29,7 @@
         "techs": ["html", "css", "javascript", "go"],
         "description": "100% online card games website to play all kinds of card games on, completely free of any gambling mechanic.",
         "links": [
-            {"name": "Code Source", "url": "https://github.com/MrLepoischiche/WebCards", "icon": "github"}
+            {"name": "Source Code", "url": "https://github.com/MrLepoischiche/WebCards", "icon": "github"}
         ]
     },
     {
@@ -37,10 +37,10 @@
             ""
         ],
         "name": "This portfolio",
-        "techs": ["html", "css", "javascript", "react"],
+        "techs": ["html", "css", "javascript", "react", "vite"],
         "description": "Right here!",
         "links": [
-            {"name": "Code Source", "url": "https://github.com/MrLepoischiche/ejean.github.io", "icon": "github"}
+            {"name": "Source Code", "url": "https://github.com/MrLepoischiche/ejean.github.io", "icon": "github"}
         ]
     }
 ]
