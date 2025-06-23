@@ -23,6 +23,20 @@
     },
     {
         "screenshots": [
+            "/data/img/graphQL_presentation_1.png",
+            "/data/img/graphQL_presentation_2.png",
+            "/data/img/graphQL_presentation_3.png"
+        ],
+        "name": "MyGraphQL",
+        "techs": ["html", "css", "javascript", "react", "graphql"],
+        "description": "A React app to query my school's GraphQL API.",
+        "links": [
+            {"name": "Source Code", "url": "https://github.com/MrLepoischiche/MyGraphQL", "icon": "github"},
+            {"name": "Visit Website", "url": "https://subtle-nougat-143c59.netlify.app/", "icon": "external"}
+        ]
+    },
+    {
+        "screenshots": [
             ""
         ],
         "name": "Cardia",

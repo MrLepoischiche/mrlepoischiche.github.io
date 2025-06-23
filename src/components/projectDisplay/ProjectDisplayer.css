@@ -25,3 +25,29 @@
 .project-card:hover {
     border-color: #707070;
 }
+
+.project-card button {
+    height: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #646cff;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.project-card .image-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 5%;
+}
